@@ -38,56 +38,56 @@
     </style>
 </head>
 <body>
-    <!-- Завдання 1: Робота з подіями миші -->
-    <button id="myButton">Натисни мене</button>
+    <!-- Р—Р°РІРґР°РЅРЅСЏ 1: Р РѕР±РѕС‚Р° Р· РїРѕРґС–СЏРјРё РјРёС€С– -->
+    <button id="myButton">РќР°С‚РёСЃРЅРё РјРµРЅРµ</button>
 
-    <!-- Завдання 2: Обробка подій клавіатури -->
-    <input type="text" id="myInput" placeholder="Введіть текст">
+    <!-- Р—Р°РІРґР°РЅРЅСЏ 2: РћР±СЂРѕР±РєР° РїРѕРґС–Р№ РєР»Р°РІС–Р°С‚СѓСЂРё -->
+    <input type="text" id="myInput" placeholder="Р’РІРµРґС–С‚СЊ С‚РµРєСЃС‚">
 
-    <!-- Завдання 3: Робота з фокусом -->
-    <input type="text" id="myField" placeholder="Введіть текст">
-    <button type="button" id="myFocusButton">Кнопка</button>
+    <!-- Р—Р°РІРґР°РЅРЅСЏ 3: Р РѕР±РѕС‚Р° Р· С„РѕРєСѓСЃРѕРј -->
+    <input type="text" id="myField" placeholder="Р’РІРµРґС–С‚СЊ С‚РµРєСЃС‚">
+    <button type="button" id="myFocusButton">РљРЅРѕРїРєР°</button>
 
-    <!-- Завдання 4: Робота з об'єктом document -->
-    <p>Текстовий вміст сторінки.</p>
+    <!-- Р—Р°РІРґР°РЅРЅСЏ 4: Р РѕР±РѕС‚Р° Р· РѕР±'С”РєС‚РѕРј document -->
+    <p>РўРµРєСЃС‚РѕРІРёР№ РІРјС–СЃС‚ СЃС‚РѕСЂС–РЅРєРё.</p>
 
-    <!-- Завдання 5: Використання addEventListener -->
-    <button id="myElement">Елемент</button>
+    <!-- Р—Р°РІРґР°РЅРЅСЏ 5: Р’РёРєРѕСЂРёСЃС‚Р°РЅРЅСЏ addEventListener -->
+    <button id="myElement">Р•Р»РµРјРµРЅС‚</button>
 
     <script>
-        // Завдання 1
+        // Р—Р°РІРґР°РЅРЅСЏ 1
         document.getElementById('myButton').addEventListener('click', function () {
-            alert('Кнопка була натиснута!');
+            alert('РљРЅРѕРїРєР° Р±СѓР»Р° РЅР°С‚РёСЃРЅСѓС‚Р°!');
         });
 
-        // Завдання 2
+        // Р—Р°РІРґР°РЅРЅСЏ 2
         document.getElementById('myInput').addEventListener('keydown', function () {
-            console.log('Клавіша була натиснута!');
+            console.log('РљР»Р°РІС–С€Р° Р±СѓР»Р° РЅР°С‚РёСЃРЅСѓС‚Р°!');
         });
 
-        // Завдання 3
+        // Р—Р°РІРґР°РЅРЅСЏ 3
         document.getElementById('myField').addEventListener('focus', function () {
-            console.log('Елемент отримав фокус!');
+            console.log('Р•Р»РµРјРµРЅС‚ РѕС‚СЂРёРјР°РІ С„РѕРєСѓСЃ!');
         });
 
         document.getElementById('myField').addEventListener('blur', function () {
-            console.log('Елемент втратив фокус!');
+            console.log('Р•Р»РµРјРµРЅС‚ РІС‚СЂР°С‚РёРІ С„РѕРєСѓСЃ!');
         });
 
-        // Завдання 4
+        // Р—Р°РІРґР°РЅРЅСЏ 4
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('Документ повністю завантажено!');
+            console.log('Р”РѕРєСѓРјРµРЅС‚ РїРѕРІРЅС–СЃС‚СЋ Р·Р°РІР°РЅС‚Р°Р¶РµРЅРѕ!');
         });
 
-        // Завдання 5
+        // Р—Р°РІРґР°РЅРЅСЏ 5
         var myElement = document.getElementById('myElement');
 
         function firstEventHandler() {
-            console.log('Подія виникла!');
+            console.log('РџРѕРґС–СЏ РІРёРЅРёРєР»Р°!');
         }
 
         function secondEventHandler() {
-            console.log('Ще один обробник події!');
+            console.log('Р©Рµ РѕРґРёРЅ РѕР±СЂРѕР±РЅРёРє РїРѕРґС–С—!');
         }
 
         myElement.addEventListener('click', firstEventHandler);
